@@ -40,7 +40,7 @@ axios({
     console.error(error);
   });
 app.get("/", (req, res) => {
-  res.send("Azure AI Translator");
+  res.send("Azure AI Translator😊");
 });
 
 app.listen(3000, () => {
