@@ -3,9 +3,7 @@ import config from "./src/config.js";
 import axios from "axios";
 import qs from "qs";
 import { v4 as uuidv4 } from "uuid";
-// const qs = require("qs");
-// const { v4: uuidv4 } = require("uuid");
-
+const app = express();
 let key = config.tranlator_key;
 let endpoint = config.endpoint;
 
@@ -41,3 +39,10 @@ axios({
   .catch(function (error) {
     console.error(error);
   });
+app.get("/", (req, res) => {
+  res.send("Azure AI Translator");
+});
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
