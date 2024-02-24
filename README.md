@@ -1,0 +1,2 @@
+- Azure Text Translation is a cloud-based REST API feature of the Translator service that uses neural machine translation technology to enable quick and accurate source-to-target text translation in real time across all supported languages.
+- Languages like Javascript, Python and C#
